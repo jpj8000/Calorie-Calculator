@@ -1,75 +1,74 @@
+<html>
+
 <head>
     <title> Calorie and Water Calculator</title>
+    <link rel="stylesheet" href="calorie.css">
+</head>
 
-  </head>
 <body>
-  <h1>Calorie and Water Calculator</h1>
-  <h2>How many calories and how much water should you eat and drink in a day?</h2>
+    <h1>Calorie and Water Calculator</h1>
+    <h2>How many calories and how much water should you eat and drink in a day?</h2>
 
- <br>
-  <p>1. What is your gender?</p>
- <div><button type="button1" id="button1" style= height:30px;width:70px;font-size:15px>Female</button>
-<button type="button2" id="button2" style=height:30px;width:70px;font-size:15px>Male</button>
-  </div>
+    <br>
+    <p>1. What is your gender?</p>
+    <div><button type="button1" id="button1" style=height:30px;width:70px;font-size:15px>Female</button>
+        <button type="button2" id="button2" style=height:30px;width:70px;font-size:15px>Male</button>
+    </div>
 
-<p>2. How old are you?</p>
+    <p>2. How old are you?</p>
 
-      <div class="input"> <span class="input" id="text-box1"></span>
-       <input type="text" maxlength="2" id="years" class="form-control"  aria-describedby="text-box"> <span class="input">years old</span></div>
+    <div class="input"> <span class="input" id="text-box1"></span>
+        <input type="text" maxlength="2" id="years" class="form-control" aria-describedby="text-box"> <span class="input">years old</span></div>
 
-  <p>3. How much do you weigh?</p>
-      <div class="input"> <span class="input" id="text-box2"></span>
-       <input type="text" maxlength="3" id="lbs" class="form-control"  aria-describedby="text-box"> <span class="input">lbs</span></div>
+    <p>3. How much do you weigh?</p>
+    <div class="input"> <span class="input" id="text-box2"></span>
+        <input type="text" maxlength="3" id="lbs" class="form-control" aria-describedby="text-box"> <span class="input">lbs</span></div>
 
-  <p>4. What is your height?</p>
+    <p>4. What is your height?</p>
     <div class="input"> <span class="input" id="text-box3"></span>
-       <input type="text" maxlength="3" id="inches" class="form-control"  aria-describedby="text-box"> <span class="input">inches</span></div>
+        <input type="text" maxlength="3" id="inches" class="form-control" aria-describedby="text-box"> <span class="input">inches</span></div>
 
-     <p>5. How many minutes of activity do you do daily?</p>
-        <div class="input-group"> <span class="input-group-addon" id="basic-addon1"></span>
-            <input type="text" maxlength="3" id="exercise" class="form-control" placeholder="Enter daily exercise" aria-describedby="basic-addon1"> <span class="input-group-addon">minutes</span></div>
+    <p>5. How many minutes of activity do you do daily?</p>
+    <div class="input-group"> <span class="input-group-addon" id="basic-addon1"></span>
+        <input type="text" maxlength="3" id="exercise" class="form-control" placeholder="Enter daily exercise" aria-describedby="basic-addon1"> <span class="input-group-addon">minutes</span></div>
 
 
-<h3>
-  <button id="button3" style= height:100px;width:400px;font-size:60px;margin-top:1em;margin-bottom:1em>Calculate!</button>
+    <h3>
+        <button id="button3" style=height:100px;width:400px;font-size:60px;margin-top:1em;margin-bottom:1em>Calculate!</button>
     </h3>
-  <p> Amount of total water is: <br>
-  <span id = "totalWater">
+    <p> Amount of total water is: <br>
+        <span id="totalWater">
 
-  <h4> Enter your amount of calculated calories to discover how many of your calories should be eaten by fats, carbohydrates and proteins!</h4>
-   <form>
-     <p><input type="text" id="totalCalories" /></p><br>
+            <h4> Enter your amount of calculated calories to discover how many of your calories should be eaten by fats, carbohydrates and proteins!</h4>
+            <form>
+                <p><input type="text" id="totalCalories" /></p><br>
 
-<h5><input type="button" onClick="multiplyBy()" Value="Enter" /></h5>
-  </form>
+                <h5><input type="button" onClick="multiplyBy()" Value="Enter" /></h5>
+            </form>
 
-<p> Amount of fats is: <br>
-  <span id = "totalFats">
+            <p> Amount of fats is: <br>
+                <span id="totalFats">
 
- <p>Amount of carbs is: <br>
-  <span id = "totalCarbs">
+                    <p>Amount of carbs is: <br>
+                        <span id="totalCarbs">
 
- <p> Amount of protein is: <br>
-  <span id = "totalProtein">
-  </span>
-    </p>
-
-
-<h6> Click for a random nutritional fact!</h6>
-          <div><input type="button" id= "button4" style= height:70px;width:70px;font-size:100px value="Fact" class="btn-info" onclick="document.getElementById('random').innerHTML=randomNutritionalFact()"></div>
-        <div id="random"></div>
-
-<h6>Click in the middle of the cup to raise the amount of water!</h6>
-<div id="glass">
-  <div id="water"></div>
-</div>
+                            <p> Amount of protein is: <br>
+                                <span id="totalProtein">
+                                </span>
+                            </p>
 
 
+                            <h6> Click for a random nutritional fact!</h6>
+                                      <div><input type="button" id="button4" style=height:70px;width:70px;font-size:100px value="Fact" class="btn-info" onclick="document.getElementById('random').innerHTML=randomNutritionalFact()"></div>
+                                    <div id="random"></div>
 
-
-
-
-
+                            <h6>Click in the middle of the cup to raise the amount of water!</h6>
+                            <div id="glass">
+                                <div id="water"></div>
+                            </div>
+                            <script src="calorie.js"></script>
 
 
 </body>
+
+</html>
