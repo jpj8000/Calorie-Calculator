@@ -1,9 +1,15 @@
-function multiplyBy() {
+function WaterBy() {
     weight = document.getElementById("pounds").value;
     exercise = document.getElementById("exercise").value;
     document.getElementById("result").innerHTML = (weight * 0.66) + ((exercise / 30) * 12);
 }
 
+function CalorieBy() {
+    weight = document.getElementById("pounds").value;
+    age = document.getElementById("years").value;
+    height = document.getElementById("inches").value;
+    document.getElementById("answer").innerHTML = 66 + (6.3 * weight) + (12.9 * height) - (6.8 * age);
+}
 
 
 function multiplyBy() {
@@ -37,21 +43,9 @@ function randomNutritionalFact() {
     }
 }
 
-var water = document.getElementById("water");
-var glass = document.getElementById("glass");
-
-var waterHeight = 0;
-
-glass.addEventListener('click', (event) => {
-    changeHeight(event);
+$("#button1").click(function () {
+    $("#water").animate({
+        top: "0px",
+        height: "200px",
+    }, 1500);
 });
-
-
-function changeHeight(event) {
-    if (waterHeight < 200) {
-        waterHeight = waterHeight + 5;
-        water.style.height = waterHeight + "px";
-        water.style.top = 210 - waterHeight + "px";
-        console.log(waterHeight);
-    }
-}

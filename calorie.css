@@ -27,61 +27,56 @@ div {
 h1 {
     margin: 20px 20px 10px;
     color: blue;
-    font-size: 80px;
+    font-size: 90px;
     line-height: 80px;
     text-align: center;
     margin-bottom: 1em;
     margin-top: em;
 }
 
-
-
-
-
 h2 {
     color: green;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
+
 }
 
 h3 {
-    color: green;
-    font-size: 40px;
-    line-height: 30px;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-h4 {
     color: purple;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
     text-align: center;
 }
 
+h4 {
+    color: purple;
+    font-size: 25px;
+    line-height: 0px;
+    text-align: center;
+    margin-bottom: 2em;
+}
 
 h5 {
     color: purple;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 0px;
     text-align: center;
 }
 
-h6 {
-    color: purple;
-    font-size: 30px;
-    line-height: 10px;
+form {
+    color: #000000;
+    font-size: 22px;
+    line-height: 35px;
     text-align: center;
+    margin-bottom: 2em;
 }
-
-
 
 #glass {
     position: relative;
     background-color: white;
     padding: 0px;
-    width: 100px;
+    width: 150px;
     height: 200px;
     margin: 0 auto;
     border: 5px solid black;
@@ -92,7 +87,42 @@ h6 {
     position: relative;
     padding: 0px;
     top: 200px;
-    width: 100px;
+    width: 150px;
     height: 0px;
     margin: 0 auto;
+}
+
+#result {
+    font-size: 22px;
+    color: red;
+    position: absolute;
+    text-align: center;
+}
+
+#answer {
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    position: relative;
+}
+
+#totalFats {
+    font-size: 22px;
+    color: red;
+    text-align: center;
+    position: relative;
+}
+
+#totalCarbs {
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    position: relative;
+}
+
+#totalProtein {
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    position: relative;
 }
