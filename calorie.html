@@ -1,6 +1,7 @@
 <html>
+
 <head>
-    <link rel="stylesheet" href = "calorie.css">
+    <link rel="stylesheet" href="calorie.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title> Calorie and Water Calculator</title>
     <link rel="stylesheet" href="calorie.css">
@@ -10,60 +11,61 @@
     <h1>Calorie and Water Calculator</h1>
     <h2>How many calories and how much water should you eat and drink in a day?</h2>
 
-  <form>
-   1. Age in years: <input type="text" id="years" />
-  <br>
-  <br>
-   2. Weight in pounds: <input type="text" id="pounds" />
-  <br>
-  <br>
-   3. Height in inches: <input type="text" id="inches" />
-  <br>
-  <br>
-   4. Minutes of exercise each day: <input type="text" id="exercise" /><br>
+    <form>
+        1. Age in years: <input type="text" id="years" />
+        <br>
+        <br>
+        2. Weight in pounds: <input type="text" id="pounds" />
+        <br>
+        <br>
+        3. Height in inches: <input type="text" id="inches" />
+        <br>
+        <br>
+        4. Minutes of exercise each day: <input type="text" id="exercise" /><br>
 
-<input type="button" onClick="WaterBy()" Value="Water Calculation"/>
+        <input type="button" onClick="WaterBy()" Value="Water Calculation" />
 
- <input type="button" onClick="CalorieBy()" Value="Calorie Calculation"/>
-</form>
+        <input type="button" onClick="CalorieBy()" Value="Calorie Calculation" />
+    </form>
 
-   <p>Amount of oz. of water you should drink daily: <br></p>
-<span id = "result"></span>
-  <br>
-<p>Amount of calories should eat daily: <br> </p>
-<span id = "answer"></span>
-  <br>
+    <p>Amount of oz. of water you should drink daily: <br></p>
+    <span id="result"></span>
+    <br>
+    <p>Amount of calories should eat daily: <br> </p>
+    <span id="answer"></span>
+    <br>
 
-            <h3> Enter your amount of calculated calories to discover how many of your calories should be eaten by fats, carbohydrates and proteins!</h3>
-            <form>
-                <p><input type="text" id="totalCalories" /></p><br>
+    <h3> Enter your amount of calculated calories to discover how many of your calories should be eaten by fats, carbohydrates and proteins!</h3>
+    <form>
+        <p><input type="text" id="totalCalories" /></p><br>
 
-       <input type="button" onClick="multiplyBy()" Value="Enter" />
-            </form>
+        <input type="button" onClick="multiplyBy()" Value="Enter" />
+    </form>
 
-            <p> Amount of fats is: <br></p>
-                <span id="totalFats"></span>
-  <br>
+    <p> Amount of fats is: <br></p>
+    <span id="totalFats"></span>
+    <br>
 
-                  <p>Amount of carbs is: <br></p>
-                <span id="totalCarbs"></span>
-  <br>
+    <p>Amount of carbs is: <br></p>
+    <span id="totalCarbs"></span>
+    <br>
 
-                  <p> Amount of protein is: <br></p>
-                     <span id="totalProtein"></span>
-  <br>
+    <p> Amount of protein is: <br></p>
+    <span id="totalProtein"></span>
+    <br>
 
-  <h4> Click for a random nutritional fact!</h4>
-             <div><input type="button" id="button4"  value="Fact" class="btn-info"  onclick="document.getElementById('random').innerHTML=randomNutritionalFact()"></div>
-                                    <div id="random"></div>
+    <h4> Click for a random nutritional fact!</h4>
+    <div><input type="button" id="button4" value="Fact" class="btn-info" onclick="document.getElementById('random').innerHTML=randomNutritionalFact()"></div>
+    <div id="random"></div>
 
-   <h5>Click the button to fill the cup with water</h5>
-                  <div><button id="button1" >Fill Cup</button></div>
-  <div><button id="button2">Reset</button></div>
+    <h5>Click the button to fill the cup with water</h5>
+    <div><button id="button1">Fill Cup</button></div>
+    <div><button id="button2">Reset</button></div>
 
-<div id="glass">
-  <div id="water"></div>
-</div>
-    <script src = "calorie.js"></script>
-  </body>
+    <div id="glass">
+        <div id="water"></div>
+    </div>
+    <script src="calorie.js"></script>
+</body>
+
 </html>

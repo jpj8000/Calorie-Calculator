@@ -1,15 +1,14 @@
-function WaterBy(){
-        weight = document.getElementById("pounds").value;
-        exercise = document.getElementById("exercise").value;
-        document.getElementById("result").innerHTML = (weight * 0.66)+((exercise / 30)*12);
+function WaterBy() {
+    weight = document.getElementById("pounds").value;
+    exercise = document.getElementById("exercise").value;
+    document.getElementById("result").innerHTML = (weight * 0.66) + ((exercise / 30) * 12);
 }
 
-function CalorieBy()
-{
-  weight = document.getElementById("pounds").value;
-  age = document.getElementById("years").value;
-  height= document.getElementById("inches").value;
-   document.getElementById("answer").innerHTML = 66 + (6.3*weight)+(12.9*height)-(6.8*age);
+function CalorieBy() {
+    weight = document.getElementById("pounds").value;
+    age = document.getElementById("years").value;
+    height = document.getElementById("inches").value;
+    document.getElementById("answer").innerHTML = 66 + (6.3 * weight) + (12.9 * height) - (6.8 * age);
 }
 
 
@@ -44,17 +43,17 @@ function randomNutritionalFact() {
     }
 }
 
-$( "#button1" ).click(function() {
-  $( "#water" ).animate({
-   top: "0px",
-   height: "200px",
-    }, 1500 );
+$("#button1").click(function () {
+    $("#water").animate({
+        top: "0px",
+        height: "200px",
+    }, 1500);
 });
 
-$( "#button2" ).click(function() {
-  $( "#water" ).animate({
-   top: "200px",
-    height: "0px",
-    }, 1000 );
+$("#button2").click(function () {
+    $("#water").animate({
+        top: "200px",
+        height: "0px",
+    }, 1000);
 
 });
