@@ -35,7 +35,7 @@ function randomNutritionalFact() {
         case 3:
             return "The average person could live without food for nearly a month, but we could only survive about one week without water.";
         case 4:
-            return "Consuminga polar bear's lived will kill you because of its high levels of Vitamin A.";
+            return "Consuming a polar bear's liver will kill you because of its high levels of Vitamin A.";
         case 5:
             return "Milk can help lower levels of anxiety.";
         case 6:
@@ -48,4 +48,12 @@ $("#button1").click(function () {
         top: "0px",
         height: "200px",
     }, 1500);
+});
+
+$("#button2").click(function () {
+    $("#water").animate({
+        top: "200px",
+        height: "0px",
+    }, 1000);
+
 });
