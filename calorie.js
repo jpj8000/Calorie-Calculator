@@ -1,14 +1,15 @@
-function WaterBy() {
-    weight = document.getElementById("pounds").value;
-    exercise = document.getElementById("exercise").value;
-    document.getElementById("result").innerHTML = (weight * 0.66) + ((exercise / 30) * 12);
+function WaterBy(){
+        weight = document.getElementById("pounds").value;
+        exercise = document.getElementById("exercise").value;
+        document.getElementById("result").innerHTML = (weight * 0.66)+((exercise / 30)*12);
 }
 
-function CalorieBy() {
-    weight = document.getElementById("pounds").value;
-    age = document.getElementById("years").value;
-    height = document.getElementById("inches").value;
-    document.getElementById("answer").innerHTML = 66 + (6.3 * weight) + (12.9 * height) - (6.8 * age);
+function CalorieBy()
+{
+  weight = document.getElementById("pounds").value;
+  age = document.getElementById("years").value;
+  height= document.getElementById("inches").value;
+   document.getElementById("answer").innerHTML = 66 + (6.3*weight)+(12.9*height)-(6.8*age);
 }
 
 
@@ -35,7 +36,7 @@ function randomNutritionalFact() {
         case 3:
             return "The average person could live without food for nearly a month, but we could only survive about one week without water.";
         case 4:
-            return "Consuming a polar bear's liver will kill you because of its high levels of Vitamin A.";
+            return "Consuminga polar bear's lived will kill you because of its high levels of Vitamin A.";
         case 5:
             return "Milk can help lower levels of anxiety.";
         case 6:
@@ -43,17 +44,17 @@ function randomNutritionalFact() {
     }
 }
 
-$("#button1").click(function () {
-    $("#water").animate({
-        top: "0px",
-        height: "200px",
-    }, 1500);
+$( "#button1" ).click(function() {
+  $( "#water" ).animate({
+   top: "0px",
+   height: "200px",
+    }, 1500 );
 });
 
-$("#button2").click(function () {
-    $("#water").animate({
-        top: "200px",
-        height: "0px",
-    }, 1000);
+$( "#button2" ).click(function() {
+  $( "#water" ).animate({
+   top: "200px",
+    height: "0px",
+    }, 1000 );
 
 });
