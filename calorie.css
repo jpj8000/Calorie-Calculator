@@ -93,14 +93,14 @@ form {
     margin: 0 auto;
 }
 
-#result {
+#totalWater {
     font-size: 22px;
     color: red;
     position: absolute;
     text-align: center;
 }
 
-#answer {
+#totalCalories {
     text-align: center;
     font-size: 22px;
     color: red;
